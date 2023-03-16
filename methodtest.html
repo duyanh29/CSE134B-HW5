@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Homework 5 - Part 1</title>
+
+  </head>
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+  <body>
+
+    <nav>
+      <a href="methodtest.html">Method Test (Part 1)</a>
+      <a  href="webcomponent.html">Web Component (Part 2)</a>
+      <br>
+      <br>
+    </nav>
+    <main>
+      <table>
+        <tr>
+        <th>Details</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="id">ID: </label><br>
+            <input type="text" id="id"><br><br>
+           
+            <label for="article_name">article_name:</label><br>
+            <input type="text" id="article_name"></input><br><br>
+            
+            <label for="article_body">article_body:</label><br>
+            <textarea required id="article_body" rows="30" cols="50"></textarea>
+          </td>
+          <td>
+            <input type='radio' name='typeSelected' value='xml' checked>XMLHttpRequest</input>
+            <br>
+            <input type='radio' name='typeSelected' value='fetch'>Fetch API</input>
+            <br><br>
+            <button id="post">Post</button>
+            <button id="get">Get</button>
+            <button id="put">Put</button>
+            <button id="delete">Delete</button>
+
+            <output>
+              <br><br><br>
+              <label>Response Result:</label><br>
+              <textarea id="response" rows="30" cols="50"></textarea>
+            </output>
+
+          </td>
+        </tr>
+      
+      </table>
+    </main>
+    <script src="methodtest.js"></script>
+
+  </body>
+</html>
